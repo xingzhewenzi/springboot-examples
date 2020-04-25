@@ -9,9 +9,11 @@
         <module name="springboot-mybatis" />
         <module name="springboot-swagger" />
         <module name="springboot-swagger2" />
+        <module name="springboot-lombok" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="springboot-lombok" target="1.8" />
       <module name="springboot-mybatis" target="1.8" />
       <module name="springboot-swagger" target="1.8" />
       <module name="springboot-swagger2" target="1.8" />
@@ -19,6 +21,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-lombok" options="-parameters" />
       <module name="springboot-mybatis" options="-parameters" />
       <module name="springboot-swagger" options="-parameters" />
       <module name="springboot-swagger2" options="-parameters" />
