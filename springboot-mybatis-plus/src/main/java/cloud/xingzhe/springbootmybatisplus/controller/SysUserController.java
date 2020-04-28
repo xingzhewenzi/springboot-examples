@@ -2,6 +2,8 @@ package cloud.xingzhe.springbootmybatisplus.controller;
 import cloud.xingzhe.springbootmybatisplus.model.SysUser;
 import cloud.xingzhe.springbootmybatisplus.service.SysUserService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,6 +47,13 @@ public class SysUserController {
     public SysUser get(String id){
         SysUser sysUser = sysUserService.getById(id);
         return sysUser;
+    }
+    @ApiOperation(value = "分页查询")
+    @RequestMapping(value = "/page",method = RequestMethod.GET)
+    public Page<SysUser> page(Integer currentPage,Integer limit){
+        Page<SysUser> page=new Page<>(currentPage,limit);
+        Page<SysUser> sysUserPage = sysUserService.page(page);
+        return sysUserPage;
     }
     @ApiOperation(value = "QueryWrapper查询列表")
     @RequestMapping(value = "/queryWrapperList",method = RequestMethod.GET)
