@@ -10,12 +10,14 @@
         <module name="springboot-swagger" />
         <module name="springboot-mybatis-plus" />
         <module name="springboot-swagger2" />
+        <module name="springboot-mybatis-plus-generator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="springboot-lombok" target="1.8" />
       <module name="springboot-mybatis" target="1.8" />
       <module name="springboot-mybatis-plus" target="1.8" />
+      <module name="springboot-mybatis-plus-generator" target="1.8" />
       <module name="springboot-swagger" target="1.8" />
       <module name="springboot-swagger2" target="1.8" />
     </bytecodeTargetLevel>
@@ -25,6 +27,7 @@
       <module name="springboot-lombok" options="-parameters" />
       <module name="springboot-mybatis" options="-parameters" />
       <module name="springboot-mybatis-plus" options="-parameters" />
+      <module name="springboot-mybatis-plus-generator" options="-parameters" />
       <module name="springboot-swagger" options="-parameters" />
       <module name="springboot-swagger2" options="-parameters" />
     </option>
