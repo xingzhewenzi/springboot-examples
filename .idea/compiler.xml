@@ -6,14 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springboot-mybatis" />
-        <module name="springboot-swagger" />
-        <module name="springboot-mybatis-plus" />
         <module name="springboot-swagger2" />
+        <module name="springboot-mybatis-plus" />
+        <module name="springboot-swagger" />
+        <module name="springboot-easypoi" />
         <module name="springboot-mybatis-plus-generator" />
+        <module name="springboot-mybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="springboot-easypoi" target="1.8" />
       <module name="springboot-lombok" target="1.8" />
       <module name="springboot-mybatis" target="1.8" />
       <module name="springboot-mybatis-plus" target="1.8" />
@@ -24,6 +26,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot-easypoi" options="-parameters" />
       <module name="springboot-lombok" options="-parameters" />
       <module name="springboot-mybatis" options="-parameters" />
       <module name="springboot-mybatis-plus" options="-parameters" />

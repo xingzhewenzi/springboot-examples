@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/lombok/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-mybatis-plus/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-mybatis-plus-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-easypoi/pom.xml" />
       </list>
     </option>
   </component>
